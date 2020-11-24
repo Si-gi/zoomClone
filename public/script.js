@@ -2,7 +2,7 @@ const socket = io()
 myPeer = new Peer({host:'peerjs-server.herokuapp.com', secure:true, port:443})
 myPeer.on('error', function (err) {
   //alert('an error has happened:', err)
-  console.log(err)
+  console.log(err.type)
 })
 /*const myPeer = new Peer(undefined, {
   host: '/',
